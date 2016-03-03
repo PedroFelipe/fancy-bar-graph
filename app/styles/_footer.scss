@@ -1,0 +1,55 @@
+/*
+ * Component: Footer
+*/
+
+.footer {
+  padding: 20px 0;
+  background-color: $yellow;
+
+  &__text {
+    margin: 0;
+    color: $brown;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+
+    &--right {
+      display: block;
+      float: right;
+      font-weight: 600;
+
+      &:hover,
+      &:focus {
+        color: $brown;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__heart {
+    position: relative;
+    top: 1px;
+    padding: 0 2px;
+    color: $red;
+  }
+
+  &__tech {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      line-height: 1;
+      list-style: none;
+
+      i {
+        font-size: 24px;
+      }
+
+      & + li {
+        margin-left: 7px;
+      }
+    }
+  }
+}
